@@ -1,0 +1,16 @@
+
+.grey-wrapper {
+    background-color: var(--darkgrey);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+ 
+ 
+ 
+ 

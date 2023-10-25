@@ -1,0 +1,172 @@
+ 
+
+.landingPage-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    min-height: 90vh;
+  }
+  
+  .track-crypto-heading,
+  .real-time-heading{
+    font-size: 7rem;
+    margin: 0px;
+    font-weight: 800;
+  }
+  
+  .real-time-heading {
+    color: var(--blue);
+  }
+  .track-crypto-heading{
+    color: var(--white);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+    transition: all 0.2s linear;
+}
+.track-crypto-heading:hover{
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+    color: var(--black);
+}
+  
+ 
+ 
+  .para {
+    color: var(--grey);
+    font-size: 1.2rem;
+  }
+  
+  .btn-flex {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .right-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    position: relative;
+  }
+  
+  .gradient {
+    position: absolute;
+    max-width: 300px;
+    top: 6rem;
+    object-fit: contain;
+    z-index: 0;
+  }
+  
+  .iphone {
+    position: absolute;
+    max-width: 380px;
+    object-fit: contain;
+    z-index: 1;
+    right: 0rem;
+  }
+  
+  @media only screen and (max-width: 1250px) {
+    .left-container {
+      width: 60%;
+    }
+  
+    .gradient {
+      max-width: 250px;
+      top: 4rem;
+    }
+    .iphone {
+      max-width: 300px;
+    }
+    .track-crypto-heading,
+    .real-time-heading {
+      font-size: 5rem;
+    }
+    .track-crypto-heading{
+      
+      -webkit-text-stroke-width: 2px;
+     
+  }
+  .track-crypto-heading:hover{
+      -webkit-text-stroke-width: 2px;
+     
+  }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .gradient {
+      max-width: 230px;
+      top: 3rem;
+    }
+    .iphone {
+      max-width: 280px;
+    }
+    .track-crypto-heading,
+    .real-time-heading {
+      font-size: 4rem;
+    }
+    .track-crypto-heading{
+      
+      -webkit-text-stroke-width: 1px;
+     
+  }
+  .track-crypto-heading:hover{
+      -webkit-text-stroke-width: 1px;
+     
+  }
+    .para {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .landingPage-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .left-container {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-container {
+      justify-content: center;
+      margin-right: auto;
+      margin-top: 4rem;
+    }
+  
+    .iphone {
+      left: auto;
+      right: auto;
+    }
+  
+    .track-crypto-heading,
+    .real-time-heading {
+      font-size: 3rem;
+    }
+    .track-crypto-heading{
+      
+      -webkit-text-stroke-width: 1px;
+     
+  }
+  .track-crypto-heading:hover{
+      -webkit-text-stroke-width: 1px;
+     
+  }
+    .para {
+      font-size: 0.8rem;
+    }
+    .btn-flex {
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 380px) {
+    .landingPage-container {
+      height: 120vh;
+    }
+  }

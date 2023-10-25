@@ -1,0 +1,21 @@
+.CoinInfo{
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.CoinInfo-desc>a{
+    color: var(--blue);
+
+}
+.CoinInfo-desc>a:hover{
+    text-decoration: underline !important;
+}
+
+.CoinInfo-heading{
+    margin: 0;
+}
+.CoinInfo-desc{
+    cursor: pointer;
+}

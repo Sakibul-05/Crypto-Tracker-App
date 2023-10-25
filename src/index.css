@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700&display=swap');
+ 
+ :root{
+   --white: #fff;
+   --black: #111;
+   --blue: #3a88e9;
+   --grey: #888;
+   --darkgrey: #1b1b1b;
+   --green: #61c96f;
+   --red: #f94141;
+ }
+  
+ html{
+  scroll-behavior: smooth;
+ }
+
+ body{
+   margin: 0; 
+   background-color: var(--black);
+   color: var(--white);
+   font-family: 'Inter Tight', sans-serif;
+ 
+ }
+
+ ::selection{
+   background-color: var(--blue);
+   color: var(--white);
+ }
+
+ ::-webkit-scrollbar{
+   width: 0.3rem;
+ }
+ ::-webkit-scrollbar-track {
+   background: var(--black);
+ }
+ ::-webkit-scrollbar-thumb {
+   background: var(--blue) ;
+   border-radius: 3rem;
+ }
+ a{
+   text-decoration: none !important;
+   color: var(--white);
+ }
+ img{
+  -webkit-user-drag: none;
+ }
+
+ [data-theme="dark"] {
+  --white: #ffffff;
+  --black: #111;
+  --grey: #a5a2a2;
+  --darkgrey: #1b1b1b;
+  --teal :rgb(15, 66, 66);
+  --sky: rgb(150, 216, 216);
+  --tomato : rgb(228, 59, 29);
+  --yellow : rgb(226, 226, 45);
+}
+
+[data-theme="light"] {
+  --white: #111;
+  --black: #fff;
+  --grey: #5f5e5e;
+  --darkgrey: #f3f3f3;
+  --teal: rgb(4, 41, 41);
+  --sky: rgb(38, 206, 206);
+  --tomato : rgb(236, 56, 24);
+  --yellow : rgb(226, 226, 45);
+}
+

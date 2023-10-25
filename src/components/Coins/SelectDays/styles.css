@@ -1,0 +1,9 @@
+.selectDays-container{
+    /* width: min-content; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+ 
