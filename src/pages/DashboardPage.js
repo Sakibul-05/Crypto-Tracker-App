@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
 import axios from "axios";
-import data from "../assets/jsonData";
 import Search from "../components/Dashboard/Search";
 import PaginationComponent from "../components/Dashboard/Pagination";
 import Loader from "../components/Common/Loader";
@@ -43,8 +42,6 @@ const DashboardPage = () => {
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-    // setCoins(data)
-    // setPaginatedCoins(data.slice(0, 10))
   }, []);
 
 
