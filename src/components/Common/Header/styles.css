@@ -1,81 +1,79 @@
-
-.navbar{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 3rem;
-    background-color: var(--black);
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  background-color: var(--black);
 }
-.logo{
-    font-size: 1.5rem;
-    cursor: pointer;
+.logo {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-.links{
-    display: flex;
-    column-gap: 1rem;
-    justify-content: flex-end;
-    align-items: center;
+.links {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
 }
-.link{
-    color: var(--grey);
-    font-weight: 500;
-    font-size: 1rem;
+.link {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1rem;
 }
-.link:hover{
-    transition: all 300ms ease-in-out;
-    color: var(--white);
+.link:hover {
+  transition: all 300ms ease-in-out;
+  color: var(--white);
 }
-.mobile-drawer{
-    display: none;
+.mobile-drawer {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
-    .navbar{
-        padding: 1.5rem;
-    }
-    .logo{
-        font-size: 1.1rem;
-    }
-    .links{
-        display: none;
-    }
-    .mobile-drawer{
-        display: block;
-    }
-    .drawer-div{
-        width: 40vw;
-        height: 100vh;
-        background-color: var(--black);
-        display: flex;
-        flex-direction: column;
-        /* padding-top: 1rem; */
-    }
-    .link{
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-    .drawer-link:hover{
-        cursor: pointer;
-        transition:all 300ms ease-in-out;
-        background-color: var(--white);
-        color: var(--black);
-
-    }
-     
+  .navbar {
+    padding: 0;
+    padding-left: 2rem;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .links {
+    display: none;
+  }
+  .mobile-drawer {
+    display: block;
+  }
+  .drawer-div {
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 1rem; */
+  }
+  .link {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .drawer-link:hover {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    background-color: var(--white);
+    color: var(--black);
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .link{
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
+  .link {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 400px) {
-    .link{
-        padding: 0.5rem;
-        font-size: 0.6rem;
-    }
+  .link {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
 }

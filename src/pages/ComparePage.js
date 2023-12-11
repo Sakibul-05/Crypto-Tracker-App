@@ -86,7 +86,6 @@ function ComparePage() {
 
   return (
     <div>
-      <Header />
       {loading || !coin1Data?.id || !coin2Data?.id ? (
         <Loader />
       ) : (

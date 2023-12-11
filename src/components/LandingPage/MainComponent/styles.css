@@ -1,172 +1,186 @@
- 
-
 .landingPage-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1.5rem 3rem;
-    min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  min-height: 90vh;
+}
+
+.track-crypto-heading,
+.real-time-heading {
+  font-size: 7rem;
+  margin: 0px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.real-time-heading {
+  color: var(--blue);
+}
+.track-crypto-heading {
+  color: var(--white);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--white);
+  transition: all 0.2s linear;
+}
+.track-crypto-heading:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--white);
+  color: var(--black);
+}
+
+.para {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.btn-flex {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-container {
+  position: relative;
+  /* border: 2px solid yellow; */
+}
+.gradient {
+  width: 100%;
+  max-width: 300px;
+  top: 6rem;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.iphone {
+  position: absolute;
+  width: 100%;
+  max-width: 380px;
+  object-fit: contain;
+  z-index: 1;
+  right: 0rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .left-container {
+    width: 60%;
   }
-  
+
+  .gradient {
+    max-width: 250px;
+    top: 4rem;
+  }
+  .iphone {
+    max-width: 300px;
+  }
   .track-crypto-heading,
-  .real-time-heading{
-    font-size: 7rem;
-    margin: 0px;
-    font-weight: 800;
-  }
-  
   .real-time-heading {
-    color: var(--blue);
+    font-size: 5rem;
   }
-  .track-crypto-heading{
-    color: var(--white);
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--white);
-    transition: all 0.2s linear;
+  .track-crypto-heading {
+    -webkit-text-stroke-width: 2px;
+  }
+  .track-crypto-heading:hover {
+    -webkit-text-stroke-width: 2px;
+  }
 }
-.track-crypto-heading:hover{
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--white);
-    color: var(--black);
-}
-  
- 
- 
+
+@media only screen and (max-width: 1050px) {
+  .gradient {
+    max-width: 230px;
+    top: 3rem;
+  }
+  .iphone {
+    max-width: 280px;
+  }
+  .track-crypto-heading,
+  .real-time-heading {
+    font-size: 4rem;
+  }
+  .track-crypto-heading {
+    -webkit-text-stroke-width: 1px;
+  }
+  .track-crypto-heading:hover {
+    -webkit-text-stroke-width: 1px;
+  }
   .para {
-    color: var(--grey);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
-  .btn-flex {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 800px) {
+  .landingPage-container {
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    justify-content: flex-start;
   }
-  
+
+  .left-container {
+    width: 100%;
+    text-align: center;
+  }
+
   .right-container {
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    position: relative;
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 3rem;
   }
-  
-  .gradient {
-    position: absolute;
-    max-width: 300px;
-    top: 6rem;
-    object-fit: contain;
-    z-index: 0;
+
+  .track-crypto-heading,
+  .real-time-heading {
+    font-size: 3rem;
   }
-  
-  .iphone {
-    position: absolute;
-    max-width: 380px;
-    object-fit: contain;
-    z-index: 1;
-    right: 0rem;
+  .track-crypto-heading {
+    -webkit-text-stroke-width: 1px;
   }
-  
-  @media only screen and (max-width: 1250px) {
-    .left-container {
-      width: 60%;
-    }
-  
-    .gradient {
-      max-width: 250px;
-      top: 4rem;
-    }
-    .iphone {
-      max-width: 300px;
-    }
-    .track-crypto-heading,
-    .real-time-heading {
-      font-size: 5rem;
-    }
-    .track-crypto-heading{
-      
-      -webkit-text-stroke-width: 2px;
-     
+  .track-crypto-heading:hover {
+    -webkit-text-stroke-width: 1px;
   }
-  .track-crypto-heading:hover{
-      -webkit-text-stroke-width: 2px;
-     
+  .para {
+    font-size: 0.8rem;
   }
+  .btn-flex {
+    justify-content: center;
   }
-  
-  @media only screen and (max-width: 1050px) {
-    .gradient {
-      max-width: 230px;
-      top: 3rem;
-    }
-    .iphone {
-      max-width: 280px;
-    }
-    .track-crypto-heading,
-    .real-time-heading {
-      font-size: 4rem;
-    }
-    .track-crypto-heading{
-      
-      -webkit-text-stroke-width: 1px;
-     
+}
+
+@media screen and (max-width: 400px) {
+  .track-crypto-heading,
+  .real-time-heading {
+    font-size: 2rem;
   }
-  .track-crypto-heading:hover{
-      -webkit-text-stroke-width: 1px;
-     
+  .track-crypto-heading {
+    -webkit-text-stroke-width: 1px;
   }
-    .para {
-      font-size: 1rem;
-    }
+  .track-crypto-heading:hover {
+    -webkit-text-stroke-width: 1px;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .landingPage-container {
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-  
-    .left-container {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .right-container {
-      justify-content: center;
-      margin-right: auto;
-      margin-top: 4rem;
-    }
-  
-    .iphone {
-      left: auto;
-      right: auto;
-    }
-  
-    .track-crypto-heading,
-    .real-time-heading {
-      font-size: 3rem;
-    }
-    .track-crypto-heading{
-      
-      -webkit-text-stroke-width: 1px;
-     
+  .para {
+    font-size: 0.8rem;
   }
-  .track-crypto-heading:hover{
-      -webkit-text-stroke-width: 1px;
-     
+  .btn-flex {
+    flex-direction: column;
   }
-    .para {
-      font-size: 0.8rem;
-    }
-    .btn-flex {
-      justify-content: center;
-    }
+}
+@media screen and (max-width: 300px) {
+  .track-crypto-heading,
+  .real-time-heading {
+    font-size: 1.5rem;
   }
-  
-  @media only screen and (max-width: 380px) {
-    .landingPage-container {
-      height: 120vh;
-    }
+  .track-crypto-heading {
+    -webkit-text-stroke-width: 0.5px;
   }
+  .track-crypto-heading:hover {
+    -webkit-text-stroke-width: 0.5px;
+  }
+  .para {
+    font-size: 0.7rem;
+  }
+  .btn-flex {
+    flex-direction: column;
+  }
+}

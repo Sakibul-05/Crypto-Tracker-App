@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
 import axios from "axios";
 import Search from "../components/Dashboard/Search";
 import PaginationComponent from "../components/Dashboard/Pagination";
 import Loader from "../components/Common/Loader";
 import BackToTopButton from "../components/Common/BackToTop";
-import Footer from "../components/Common/Footer";
 
 const DashboardPage = () => {
   const [coins, setCoins] = useState([]);
@@ -44,7 +42,6 @@ const DashboardPage = () => {
       .catch((err) => console.log(err));
   }, []);
 
-
   return (
     <div>
       {isLoading ? (
@@ -52,7 +49,6 @@ const DashboardPage = () => {
       ) : (
         <>
           <BackToTopButton />
-          <Header />
           <Search search={search} onSearchChange={onSearchChange} />
           <TabsComponent coins={search ? filteredCoins : paginatedCoins} />
           {!search && (
@@ -63,7 +59,6 @@ const DashboardPage = () => {
           )}
         </>
       )}
-      <Footer/>
     </div>
   );
 };
